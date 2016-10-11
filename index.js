@@ -1,5 +1,5 @@
-var seneca = require('seneca')();
+var Seneca = require('seneca');
 
 module.exports = function () {
-  this.seneca = seneca;
+  this.seneca = Seneca(framework.config.seneca.options);
 };
