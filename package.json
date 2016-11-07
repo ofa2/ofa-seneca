@@ -1,6 +1,6 @@
 {
   "name": "ofa-seneca",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/gongxiancao/ofa-seneca#readme",
   "dependencies": {
-    "seneca": "1.2.0"
+    "seneca": "^3.2.2"
   }
 }
