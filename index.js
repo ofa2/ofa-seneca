@@ -7,9 +7,4 @@ module.exports = function () {
   options.system.close_signals = {};
 
   this.seneca = Seneca(options);
-  this.seneca.shutdown = function (done) {
-    self.seneca.act({role: 'seneca', cmd: 'shutdown'}, function (err) {
-      self.seneca.close(done);
-    });
-  };
 };
