@@ -1,6 +1,6 @@
 {
   "name": "ofa-seneca",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,6 @@
   "homepage": "https://github.com/gongxiancao/ofa-seneca#readme",
   "dependencies": {
     "bluebird": "3.3.5",
-    "seneca": "^3.2.2"
+    "seneca": "3.3.0"
   }
 }
