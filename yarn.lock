@@ -642,13 +642,19 @@ balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
 
-bluebird@3.3.5:
-  version "3.3.5"
-  resolved "https://registry.npmjs.org/bluebird/-/bluebird-3.3.5.tgz#5ee747f1c7bd967658b683936430aee753955a34"
+bluebird@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.npmjs.org/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
 
 boom@3.x.x:
   version "3.2.2"
   resolved "https://registry.npmjs.org/boom/-/boom-3.2.2.tgz#0f0cc5d04adc5003b8c7d71f42cca7271fef0e78"
+  dependencies:
+    hoek "4.x.x"
+
+boom@4.x.x:
+  version "4.3.1"
+  resolved "https://registry.npmjs.org/boom/-/boom-4.3.1.tgz#4f8a3005cb4a7e3889f749030fd25b96e01d2e31"
   dependencies:
     hoek "4.x.x"
 
@@ -1353,6 +1359,10 @@ jsonic@0.2.2:
   version "0.2.2"
   resolved "https://registry.npmjs.org/jsonic/-/jsonic-0.2.2.tgz#127bb99df4d821652c48a23d025cf2b16e618491"
 
+jsonic@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.npmjs.org/jsonic/-/jsonic-0.3.0.tgz#b545da95f54392e58b3dda05f5f2e377a6c9d1bf"
+
 kind-of@^3.0.2:
   version "3.2.2"
   resolved "https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz#31ea21a734bab9bbb0f32466d893aea51e4a3c64"
@@ -1393,6 +1403,10 @@ lodash@3.10.0:
 lodash@4.15, lodash@4.15.0:
   version "4.15.0"
   resolved "https://registry.npmjs.org/lodash/-/lodash-4.15.0.tgz#3162391d8f0140aa22cf8f6b3c34d6b7f63d3aa9"
+
+lodash@4.17.4:
+  version "4.17.4"
+  resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
 lodash@^4.17.4, lodash@^4.2.0, lodash@^4.3.0:
   version "4.17.10"
@@ -1691,6 +1705,10 @@ qs@6.2.1:
   version "6.2.1"
   resolved "https://registry.npmjs.org/qs/-/qs-6.2.1.tgz#ce03c5ff0935bc1d9d69a9f14cbd18e568d67625"
 
+qs@6.4.0:
+  version "6.4.0"
+  resolved "https://registry.npmjs.org/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
+
 randomatic@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/randomatic/-/randomatic-3.0.0.tgz#d35490030eb4f7578de292ce6dfb04a91a128923"
@@ -1924,9 +1942,9 @@ seneca-log-filter@0.1.0:
   dependencies:
     lodash "4.15.0"
 
-seneca-transport@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/seneca-transport/-/seneca-transport-2.1.0.tgz#06675938f3c6f20bf1b6fb4b54807ec9846b3ec7"
+seneca-transport@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/seneca-transport/-/seneca-transport-2.1.1.tgz#ff8d1a0335bfe037ca7ceddf27828bdd55292a22"
   dependencies:
     eraro "0.4.1"
     gex "0.2.2"
@@ -1940,28 +1958,29 @@ seneca-transport@2.1.0:
     reconnect-core "1.3.0"
     wreck "9.0.0"
 
-seneca@3.3.0:
-  version "3.3.0"
-  resolved "https://registry.npmjs.org/seneca/-/seneca-3.3.0.tgz#b8c07575fa074284e2407d702ddf35c30fa199bc"
+seneca@^3.4.3:
+  version "3.4.3"
+  resolved "https://registry.npmjs.org/seneca/-/seneca-3.4.3.tgz#f240bce052554300cfbba35f123975dcab69704a"
   dependencies:
     archy "1.0.0"
     eraro "0.4.1"
     gate-executor "1.1.1"
     gex "0.2.2"
     json-stringify-safe "5.0.1"
-    jsonic "0.2.2"
-    lodash "4.15.0"
-    lru-cache "4.0.1"
+    jsonic "0.3.0"
+    lodash "4.17.4"
     minimist "1.2.0"
     nid "0.3.2"
     norma "0.3.0"
     ordu "0.1.1"
     patrun "0.5.1"
+    qs "6.4.0"
     rolling-stats "0.1.1"
     semver "5.3.0"
     seneca-log-filter "0.1.0"
-    seneca-transport "2.1.0"
+    seneca-transport "2.1.1"
     use-plugin "0.3.2"
+    wreck "12.2.0"
 
 shebang-command@^1.2.0:
   version "1.2.0"
@@ -2176,6 +2195,13 @@ wordwrap@~1.0.0:
 wrappy@1:
   version "1.0.2"
   resolved "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
+
+wreck@12.2.0:
+  version "12.2.0"
+  resolved "https://registry.npmjs.org/wreck/-/wreck-12.2.0.tgz#a1c3371e2152bf6d3600ff581b669c68a4d3d8b8"
+  dependencies:
+    boom "4.x.x"
+    hoek "4.x.x"
 
 wreck@9.0.0:
   version "9.0.0"

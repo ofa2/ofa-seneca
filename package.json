@@ -19,7 +19,7 @@
     "rollup-plugin-node-resolve": "^3.3.0"
   },
   "dependencies": {
-    "bluebird": "3.3.5",
-    "seneca": "3.3.0"
+    "bluebird": "^3.5.1",
+    "seneca": "^3.4.3"
   }
 }
