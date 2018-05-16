@@ -1,5 +1,5 @@
 {
-  "name": "ofa2/ofa2-seneca",
+  "name": "@ofa2/ofa2-seneca",
   "version": "1.0.1",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
